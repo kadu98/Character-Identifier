@@ -28,7 +28,7 @@ public class CharacId
 			while ((line = br.readLine()) != null) {
 
 			        // use comma as separator
-				String[] country = line.split(cvsSplitBy);
+				
 				System.out.println(line);
 
 			}
@@ -47,7 +47,6 @@ public class CharacId
 			}
 		}
 
-		System.out.println("Done");
 	  }
 
 	
