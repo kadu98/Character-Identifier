@@ -1,0 +1,15 @@
+As a user I need to be able to paste my character into the program so that I can retrieve information about the character.
+
+As a user I need to be able see the font in large characters so that I can verify that this is actually the character I want.
+
+As a user I need the alpha entities so that I can use a character in my program or website that my keyboard does not support.
+
+As a user I need the hex and decimal entity so that I can use a character in my program or website that my keyboard does not support if the character does not have an alpha entity.
+
+As a user I need the hex and decimal Unicode numbers so that I can use a character in my program that is coded in another language that my keyboard does not support when I am coding in a language other than Java.
+
+As a user I need to be able to see what a character will look like in UTF-8 so that I can make the decision whether it would be more convenient/faster to use UTF.
+
+As a user I need to be able to tell what the character is in words so that I can use the character in the right manner.
+
+As a user I need to be able know to code it in Java so that I can use the entity when writing a Java program.
