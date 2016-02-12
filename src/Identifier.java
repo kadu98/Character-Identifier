@@ -1,3 +1,8 @@
+/* We plan to have separate parallel list for each thing we want to display. I have demonstrated with
+ * two example list: hex and english. Method searches hex list for what would be user input then gets
+ * the index of that element. Then it outputs the english translation at that index fro the english 
+ * list.
+ */
 import java.util.Arrays;
 
 public class Identifier
