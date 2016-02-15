@@ -30,6 +30,10 @@ public class CharacId
 			        // use comma as separator
 				
 				System.out.println(line);
+				
+	char c = 'a';
+	String a = Integer.toHexString(c); 
+	System.out.println(a);
 
 			}
 
