@@ -1,8 +1,3 @@
-/* We plan to have separate parallel list for each thing we want to display. I have demonstrated with
- * two example list: hex and english. Method searches hex list for what would be user input then gets
- * the index of that element. Then it outputs the english translation at that index from the english 
- * list.
- */
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -13,7 +8,8 @@ import java.io.FileNotFoundException;
 
 public class Identifier
 {
-public static void main(String argsp[])   {
+public void id ()   {
+	
 ArrayList<String> list = null;
 
 {
@@ -30,7 +26,7 @@ ArrayList<String> list = null;
             
        if(line.contains("0x294a")) {
             list = new ArrayList<String>(Arrays.asList(line.split("\\s*,\\s*")));
-            
+            //System.out.println(list);
             System.out.println(list.get(4));
        }
          

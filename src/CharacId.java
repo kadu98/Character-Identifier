@@ -1,60 +1,38 @@
-
+import java.util.Scanner;
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-
 
 public class CharacId
 {
 
 	public static void main(String[] args)
 	{
-		CharacId obj = new CharacId();
-		obj.run();
+		Scanner sca =new Scanner(System.in);
+		System.out.println("enter a character");
+		char ch =sca.next().charAt(0);
+		
+		String hexStringMajor = Integer.toHexString(ch); 
+		
+		String hexStringAddition="0x";
+		String hexString= hexStringAddition +hexStringMajor;
+		System.out.println(hexString);
+		System.out.println(hexStringMajor);
+		
+		
 
 	  }
+	/*
+    	public static int hex2decimal(String hexStringMajor) {
+            String digits = "0123456789ABCDEF";
+            s = s.toUpperCase();
+            int val = 0;
+            for (int i = 0; i < s.length(); i++) {
+                char c = s.charAt(i);
+                int d = digits.indexOf(c);
+                val = 16*val + d;
+            }
+            return val;
+        }​
+*/
+}
 
-	  public void run() {
-
-		String csvFile = "entityfacts.csv";
-		BufferedReader br = null;
-		String line = "";
-		String cvsSplitBy = ",";
-
-		try {
-
-			br = new BufferedReader(new FileReader("entityfacts.csv"));
-			while ((line = br.readLine()) != null) {
-
-			        // use comma as separator
-				
-				System.out.println(line);
-				
-	char c = 'a';
-	String a = Integer.toHexString(c); 
-	System.out.println(a);
-
-			}
-
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		} finally {
-			if (br != null) {
-				try {
-					br.close();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-			}
-		}
-
-	  }
-
-	
-
-	}
-
-
+	  
