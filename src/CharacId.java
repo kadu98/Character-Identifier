@@ -3,36 +3,46 @@ import java.io.BufferedReader;
 
 public class CharacId
 {
-
-	public static void main(String[] args)
+	public char Scanner(){
+	Scanner sca =new Scanner(System.in);
+	System.out.println("enter a character");
+	char ch =sca.next().charAt(0);
+	return ch;
+	}
+	public String[] convertToHex(char ch) 
 	{
-		Scanner sca =new Scanner(System.in);
-		System.out.println("enter a character");
-		char ch =sca.next().charAt(0);
 		
-		String hexStringMajor = Integer.toHexString(ch); 
 		
+		String hexStringMajor = Integer.toHexString(ch);  // hex value
+
 		String hexStringAddition="0x";
-		String hexString= hexStringAddition +hexStringMajor;
-		System.out.println(hexString);
-		System.out.println(hexStringMajor);
+		String hexString1 = "0x" + Integer.toHexString(ch | 0x10000).substring(1);
+		String hexString2 = hexStringAddition + hexStringMajor;
+		String[] hexString = {hexString1, hexString2};
+		return hexString;
 		
+	}
+	
+	
+		//public void 
 		
+		/*
+			ch.setFont(new Font("TimesRoman", Font.PLAIN, 30)); 
+			System.out.println(ch); // need to put into JFrame
+		 */
+		/*
+	
+		// decimal entity &#233
+		//String decimalEntity= "&#" + decimal;
+		//System.out.println(decimalEntity);
 
-	  }
-	/*
-    	public static int hex2decimal(String hexStringMajor) {
-            String digits = "0123456789ABCDEF";
-            s = s.toUpperCase();
-            int val = 0;
-            for (int i = 0; i < s.length(); i++) {
-                char c = s.charAt(i);
-                int d = digits.indexOf(c);
-                val = 16*val + d;
-            }
-            return val;
-        }​
-*/
-}
 
-	  
+		*/
+
+	}
+
+
+
+
+
+

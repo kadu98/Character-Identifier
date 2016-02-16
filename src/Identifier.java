@@ -8,7 +8,7 @@ import java.io.FileNotFoundException;
 
 public class Identifier
 {
-public void id ()   {
+public void id (String[] hexString)   {
 	
 ArrayList<String> list = null;
 
@@ -24,11 +24,33 @@ ArrayList<String> list = null;
             
            
             
-       if(line.contains("0x294a")) {
+       if(line.contains(hexString[0]))  {
             list = new ArrayList<String>(Arrays.asList(line.split("\\s*,\\s*")));
-            //System.out.println(list);
-            System.out.println(list.get(4));
+            String x = list.get(3);
+            String y = list.get(4);
+            String hex = list.get(1);
+            System.out.println(list);
+            System.out.println("Alpha Entity: "+x);
+            System.out.println("English form: "+y);
+            //String hex = z;
+            System.out.println("The hex unicode number is:" + hex);
+           
+    		//System.out.println("The Hex Entity is: "+hexEntity);
        }
+      
+       if(line.contains(hexString[1])) {
+    	   list = new ArrayList<String>(Arrays.asList(line.split("\\s*,\\s*")));
+           String x = list.get(3);
+           String y = list.get(4);
+           String hex = list.get(1);
+           System.out.println(list);
+           System.out.println("Alpha Entity: "+x);
+           System.out.println("English form: "+y);
+           //String hex = z;
+           System.out.println("The hex unicode number is:" + hex);
+           
+        }
+      
          
             	
         }
