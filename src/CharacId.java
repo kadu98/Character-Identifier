@@ -9,6 +9,17 @@ public class CharacId
 	char ch =sca.next().charAt(0);
 	return ch;
 	}
+	
+	public void print(char ch) {
+		String hexStringMajor = Integer.toHexString(ch);
+ 		String hexEntity = "&#x00" + hexStringMajor;
+ 		System.out.println("Hex Entity:"+hexEntity);
+ 		String javaEntity = "u00" + hexStringMajor;
+		System.out.println("Java Code:"+javaEntity);
+		String UTF8 = hexStringMajor;
+		System.out.println("UTF-8 value: " +UTF8);
+	}
+	
 	public String[] convertToHex(char ch) 
 	{
 		
