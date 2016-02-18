@@ -1,14 +1,72 @@
-import javax.swing.JButton;​
+import javax.swing.JButton;
 
-public class CharacterDriver1 extends JFrame implements ActionListener { // Driver and JFrame class
+import javax.swing.JFrame;
+
+import javax.swing.JLabel;
+
+import javax.swing.JMenu;
+
+import javax.swing.JMenuBar;
+
+import javax.swing.JMenuItem;
+
+import javax.swing.JScrollPane;
+
+import javax.swing.JTextArea;
+
+import javax.swing.JTextField;
+
+import javax.swing.JTextPane;
+
+
+
+import java.awt.BorderLayout;
+
+import java.awt.Dimension;
+
+import java.awt.FlowLayout;
+
+import java.awt.Font;
+
+import java.awt.event.ActionListener;
+
+import java.awt.event.ActionEvent;
+
+import java.io.BufferedReader;
+
+import java.io.BufferedWriter;
+
+import java.io.FileNotFoundException;
+
+import java.io.FileReader;
+
+import java.io.FileWriter;
+
+import java.io.IOException;
+
+
+
+import javax.swing.JPanel;
+
+import javax.swing.SpringLayout;
+
+
+
+public class CharacterDriver extends JFrame implements ActionListener { // Driver and JFrame class
+
 				
+
 	        public static void main(String[] args)
+
 	        {
-		        	new CharacterDriver1().setVisible(true); //displays CharacterDriver1 method in JFrame          	   
+
+		        	new CharacterDriver().setVisible(true); //displays CharacterDriver1 method in JFrame 
+
+                          	   
 
 	    	}
 
-	        private CharacterDriver1() { //Creates JFrame window
+	        public CharacterDriver() { //Creates JFrame window
 
 	        	super("Character Identifier");
 

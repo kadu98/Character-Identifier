@@ -62,6 +62,7 @@ ArrayList<String> list = null;
     return new String[]{"Not found","Not found","Not found"}; // To allow the program to return values, each aspect of program must return some values. 
 }   // if the program cannot find hexString1 or hexString2 in the csv file, it will return the above array.
 }
+}
 
-}​
+
 
